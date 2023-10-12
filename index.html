@@ -3,12 +3,15 @@
 
 <head>
     <title>Currículum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="author" content="Katherine Tumbaco" />
     <meta name="copyright" content="Katherine Tumbaco" />
     
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="images/cv.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -18,63 +21,50 @@
     <nav>
         <ul>
             <li><a href="#informacion-personal">Inicio</a></li>
-            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#formacion">Formación</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
             <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
     <section id="informacion-personal">
-        <h2>Información personal</h2>
+        <h2><img class="p-icon" src="images/personal.png" alt="personal">
+            Información personal</h2>
         <div class="informacion" >
             <div class="imagen-curriculum">
-                <img src="images/p.jpg" alt="Mi Foto" width="100" height="150">
+                <img class="imgcv" src="images/p.jpg" alt="Mi Foto" width="100" height="150">
             </div>
             <div class="detalles-contacto">
-                <p> Nombre: <span>Katherine Tumbaco</span> </p>
-                <p> País: <span>Ecuador</span> </p>
-                <p> Ciudad: <span>Guayaquil</span> </p>
-                <p> Teléfono: <span>+593 960 187 017</span> </p>
-                <p> Correo electrónico: <a href="mailto:katumbac@espol.edu.ec">katumbac@espol.edu.ec</a></p>
-                <p> LinkedIn: <a href="https://www.linkedin.com/in/katumbac/">katumbac</a></p>
+                <p> Katherine Alexandra </p>
+                <p> Tumbaco Sellan </p>
+                <p> <span>Guayaquil, Ecuador</span> </p>
+                <p> <img class="linkedin-icon" src="images/telefono.png" alt="telefono Icon">
+                    Teléfono: <span>+593 960 187 017</span> </p>
+                <p> <img class="linkedin-icon" src="images/gmail.png" alt="Correo Icon">
+                    Correo electrónico: <a href="mailto:katumbac@espol.edu.ec">katumbac@espol.edu.ec</a></p>
+                
+                <p><img class="linkedin-icon" src="images/linkedin.png" alt="LinkedIn Icon">
+                     LinkedIn: <a href="https://www.linkedin.com/in/katumbac/">katumbac</a></p>
             </div>
         </div>
     </section>
     
-    <section id="educacion">
-        <h2>Educación</h2>
-        <h3>Educación Primaria</h3>
-        <ul>
-            <li>
-                <strong>"Mundo de Ilusiones"</strong><br>
-                <p>Guayaquil, Ecuador<br></p>
-                <p>Año de finalización: 2013</p>
-            </li>
-        </ul>
+    <section id="formación">
+        <h2><img class="p-icon" src="images/formacion.png" alt="Formación Icon">
+            Formación</h2>
+        <div class="container-info">
+            <h3>Ingeniería en Computación 2021-presente </h3>
+            <p>ESPOL, Escuela Superior Politécnica Del Litoral</p> 
 
-        <h3>Educación Secundaria</h3>
-        <ul>
-            <li>
-                <strong>Unidad Eduactiva Franciscana "San Luis Rey de Francia"</strong><br>
-                <p>Guayaquil, Ecuador<br></p>
-                <p>Año de finalización: 2019</p>
-            </li>
-        </ul>
-
-        <h3>Educación Terciaria</h3>
-        <ul>
-            <li>
-                <strong>Escuela Superior Politécnica del Litoral</strong><br>
-                <p>Computación<br></p>
-                <p>Guayaquil, Ecuador<br></p>
-                <p>Cursando el 6to Semestre<br></p>
-
-            </li>
-        </ul>
+            <h3>Bachiller en Aplicaciones Informáticas 2013-2019 </h3>
+            <p>UEFSRF, Unidad Eduactiva Franciscana "San Luis Rey de Francia"</p>        
+        </div>      
     </section>
     <section id="experiencia">
-        <h2>Experiencia</h2>
+        <h2><img class="p-icon" src="images/experiencia.png" alt="Experiencia Icon">
+            Experiencia</h2>
         <p> Cargo: <span>Desarrollador de software</span> </p>
         <p> Empresa: <span>Andec S.A</span> </p>
         <p> Fechas: <span>Enero 2019 - Abril 2019</span> </p>
@@ -87,56 +77,140 @@
         </p>
     </section>
     <section id="cursos">
-        <h2>Cursos</h2>
-        <ul>
-            <li> <strong>Protege tu Negocio: Ciberseguridad en el Teletrabajo </strong><br>
-                Google Actívate, Marzo 2022<br>
-                <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Verificable en línea</a>
-                <p>Código de Verificación: 9BB FMX 86X</p>
-            </li>
-
-            <li> <strong>Introducción al desarrollo web: HTML y CSS (2/2) </strong><br>
-                Google Actívate, Abril 2020<br>
-                <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Verificable en línea</a>
-                <p>Código de Verificación: DNT T6N JZH</p>
-            </li>
-
-            <li> <strong>Introducción al desarrollo web: HTML y CSS (1/2) </strong><br>
-                Google Actívate, Junio 2020<br>
-                <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Verificable en línea</a>
-                <p>Código de Verificación: TWS RDE DE6</p>
-            </li>
-
-            <li> <strong>Introducción a IoT </strong><br>
-                Cisco, Julio 2020<br>
-
-            </li>
-        </ul>
+        <h2><img class="p-icon" src="images/cursos.png" alt="Cursos Icon">
+            Cursos</h2>
+        <table style="width:100%;" class="content-table1">
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Empresa</th>
+                    <th>Curso Finalizado</th>
+                    <th>Certificado en línea</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Protege tu Negocio: Ciberseguridad en el Teletrabajo</td>
+                    <td>Google Actívate</td>
+                    <td>Marzo, 2022</td>
+                    <td><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Verificable en línea</a>
+                        <p>Código de Verificación: 9BB FMX 86X</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Introducción al desarrollo web: HTML y CSS (2/2)</td>
+                    <td>Google Actívate</td>
+                    <td>Abril, 2020</td>
+                    <td><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Verificable en línea</a>
+                        <p>Código de Verificación: DNT T6N JZH</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Introducción al desarrollo web: HTML y CSS (1/2)</td>
+                    <td>Google Actívate</td>
+                    <td>Junio, 2020</td>
+                    <td><a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Verificable en línea</a>
+                        <p>Código de Verificación: TWS RDE DE6</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Introducción a IoT </td>
+                    <td>Cisco</td>
+                    <td>Julio, 2020</td>
+                    <td><p>-----------</p></td>
+                </tr>
+            </tbody>
+          </table>
+    
     </section>
+
+    <section id="proyectos">
+        <h2><img class="p-icon" src="images/proyectos.png" alt="Proyecto Icon">
+            Proyectos Realizados</h2>
+        <table style="width:100%;" class="content-table1">
+            <thead>
+                <tr>
+                    <th>Nombre del Proyecto</th>
+                    <th>Colaboradores</th>
+                    <th>Link del Proyecto</th>
+                    <th>Proyecto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>¿En qué animal estás pensando?</td>
+                    <td>
+                        <p>Katherine Tumbaco</p>
+                        <p>Juan Demera</p>
+                        <p>David Rivera</p>
+                    </td>
+                    <td>
+                        <a href="https://github.com/katumbac/Proyecto06_ED_P2.git"> ¿En qué animal estás pensando? </a>
+                    </td>
+                    <td>
+                        <img src="images/proyecto1.png" alt="¿En qué animal estás pensando?" width=40% height=40%>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Implementación de una red de VOZ sobre IP</td>
+                    <td>
+                        <p>Katherine Tumbaco</p>
+                        <p>Roberto Encalada</p>
+                        <p>Roberto Patiño</p>
+                    </td>
+                    <td>
+                        <a href="https://youtu.be/ipC09Juz4-k?si=OAtcggFT-vk-RoGG"> Implementación de una red de VOZ sobre IP </a>
+                    </td>
+                    <td>
+                        <iframe width=80% height="65%" src="https://www.youtube.com/embed/ipC09Juz4-k?si=OAtcggFT-vk-RoGG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <section id="habilidades">
-        <h2>Habilidades</h2>
-        <h3>Habilidades Técnicas</h3>
-        <ul>
-            <li>Lenguajes de programación: Python, HTML, Java</li>
-            <li>Bases de datos: MySQL</li>
-            <li>Herramientas de desarrollo: Visual Studio Code, Git. Cisco Packet Tracer</li>
-            <li>Bases de datos: MySQL</li>
-            <li>Diseño gráfico nivel medio con Adobe Photoshop, Ilustrator.</li>
-            <li>Microsoft Excel</li>
-        </ul>
-
-        <h3>Habilidades Blandas</h3>
-        <ul>
-            <li>Trabajo en equipo</li>
-            <li>Responsabilidad</li>
-            <li>Puntualidad</li>
-            <li>Empatía</li>
-            <li>Paciencia</li>
-
-        </ul>
+        <h2><img class="p-icon" src="images/habilidades.png" alt="Habilidadeson"> Habilidades</h2>
+        
+        <div class="habilidadestec" >
+            <div class="habilidadestecnicas" >
+                <h3>Habilidades Técnicas</h3>
+                <ul>
+                    <li>Lenguajes de programación: Python, HTML, Java</li>
+                    <li>Bases de datos: MySQL</li>
+                    <li>Herramientas de desarrollo: Visual Studio Code, Git. Cisco Packet Tracer</li>
+                    <li>Bases de datos: MySQL</li>
+                    <li>Diseño gráfico nivel medio con Adobe Photoshop, Ilustrator.</li>
+                    <li>Microsoft Excel</li>
+                </ul>
+            </div>
+            <div class="habilidadesBlandas" >
+                <h3>Habilidades Blandas</h3>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Responsabilidad</li>
+                    <li>Puntualidad</li>
+                    <li>Empatía</li>
+                    <li>Paciencia</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <footer>
-    <p>Copyright © 2023 Katherine Tumbaco</p>
+    <footer id="contacto">
+        <div class="footer-column-2">
+            <a href="mailto:katumbac@espol.edu.ec">
+                <img src="images/gmail.png" width="30" height="30">
+            </a>
+            <a href="https://www.linkedin.com/in/katumbac/">
+                <img src="images/linkedin.png" width="30" height="30">
+            </a>
+        </div>
+        <div id="footer-line"></div>
+        <div>
+            <p>Copyright © 2023 Katherine Tumbaco</p>
+        </div>
+        
     </footer>
 </body>
 </html>

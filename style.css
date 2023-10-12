@@ -1,0 +1,176 @@
+/* Reset de márgenes y relleno */
+body, h1, p {
+    margin: 10px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px; /* Tamaño de fuente */
+    color: #003785; /* Color del texto del título */
+    text-align: center; /* Alineación del texto al centro */
+    margin: 20px 0; /* Espaciado exterior arriba y abajo */
+    font-weight: bold; /* Texto en negritas */
+}
+
+h2 {
+    color: #003785;
+    position: inline-block;
+}
+
+h3 {
+    color: #003785;
+}
+
+.informacion{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.imagen-curriculum{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 40%;  
+}
+.imgcv{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f2f2f2;
+}
+
+.imgcv:hover {
+    border-color: #003785; /* Cambiar el color del borde al pasar el mouse */
+}
+
+.detalles-contacto{
+    flex: 2; 
+    padding: 20px; 
+    background-color: #f2f2f2;
+}
+
+
+
+.container-info {
+    width: 100%;
+}
+
+.container-info h3{
+    color: #1465bb; 
+    text-align: middle;
+}
+
+.linkedin-icon{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.p-icon{
+    padding: auto;
+    width: 2.4%;
+    height: 2.4%;
+}
+
+
+
+nav {
+    background-color: #003785; /* Color de fondo de la barra de navegación */
+}
+
+/* Estilo de la lista no ordenada (ul) */
+nav ul {
+    list-style: none; /* Quitar las viñetas de la lista */
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Alinear los elementos al centro */
+}
+
+/* Estilo de los elementos de la lista (li) */
+nav li {
+    display: inline; /* Hacer que los elementos se muestren en línea */
+    margin: 0 20px; /* Espaciado entre elementos */
+}
+
+nav a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffde73 
+}
+
+.content-table1{
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    font-size: 1em;  
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+}
+
+.content-table1 thead tr { 
+    background-color: #003785; 
+    color: #ffffff; 
+    text-align: middle; 
+}
+
+.content-table1 th, .content-table1 td { 
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.content-table1 tbody tr { 
+    border-bottom: 1px solid #dddddd; 
+} 
+
+.content-table1 tbody tr:nth-of-type(even) { 
+    background-color: #f3f3f3; 
+} 
+
+.content-table1 tbody tr:last-of-type { 
+    border-bottom: 2px solid #003785; 
+}
+
+
+
+
+
+.habilidadestec{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f2f2f2;
+}
+
+.habilidadestecnicas{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 50%; 
+    padding: 50px; 
+}
+.habilidadesBlandas{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 50%;  
+    padding: 80px; 
+}
+
+.footer-column-2{
+    display: inline-block;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+footer {
+    background-color: #003785; /* Color de fondo del footer */
+    color: #fff; /* Color de texto */
+    text-align: center;
+    padding: 20px 0; /* Espaciado interior arriba y abajo */
+}
