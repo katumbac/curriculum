@@ -1,0 +1,247 @@
+
+*{
+    font-family: Arial, sans-serif;
+}
+body, h1, p {
+    margin: 10px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 36px; 
+    color: #003785; 
+    text-align: center; 
+    margin: 20px 0; 
+    font-weight: bold; 
+    font-family: Georgia, serif;
+}
+
+h2 {
+    color: #003785;
+    position: inline-block;
+    font-family: 'Times New Roman', serif;
+}
+
+h3 {
+    color: #003785;
+}
+
+@import 
+url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700& display=swap');
+
+h1,h2,h3{ 
+    font-family:Roboto;
+}
+
+.linkedin-icon{
+    width: 15px;
+    height: 15px;
+}
+
+nav {
+    background-color: #003785;
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+nav li {
+    display: inline; 
+    margin: 0 20px; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffde73 
+}
+
+#informacion-personal .p-icon{
+    width: 30px;
+    height: 30px;
+}
+
+#informacion-personal .informacion{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+#informacion-personal .imagen-curriculum{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 50%;  
+}
+#informacion-personal .imgcv{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f2f2f2;
+}
+
+#informacion-personal .imgcv:hover {
+    border-color: #003785; /* Cambiar el color del borde al pasar el mouse */
+}
+
+#informacion-personal .detalles-contacto{
+    flex: 2; 
+    padding: 20px;   
+}
+
+#formación .p-icon{
+    width: 30px;
+    height: 30px;
+}
+
+#formación .container-info {
+    width: 100%;
+}
+
+#formación .container-info h3{
+    color: #1465bb; 
+    text-align: middle;
+}
+#experiencia .p-icon{
+    width: 30px;
+    height: 30px;
+}
+
+#cursos .p-icon{
+    width: 30px;
+    height: 30px;
+}
+#cursos .content-table1{
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    font-size: 1em;  
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+}
+
+#cursos .content-table1 thead tr { 
+    background-color: #003785; 
+    color: #ffffff; 
+    text-align: middle; 
+}
+
+#cursos .content-table1 th, .content-table1 td { 
+    padding: 12px 15px;
+    text-align: center;
+}
+
+#cursos .content-table1 tbody tr { 
+    border-bottom: 1px solid #dddddd; 
+} 
+
+#cursos .content-table1 tbody tr:nth-of-type(even) { 
+    background-color: #f3f3f3; 
+} 
+
+#cursos .content-table1 tbody tr:last-of-type { 
+    border-bottom: 2px solid #003785; 
+}
+
+#proyectos .p-icon{
+    width: 30px;
+    height: 30px;
+}
+
+#proyectos .content-table1{
+    border-collapse: collapse; 
+    margin: 0 auto; 
+    font-size: 1em;  
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+}
+
+#proyectos .content-table1 thead tr { 
+    background-color: #003785; 
+    color: #ffffff; 
+    text-align: middle; 
+}
+
+#proyectos .content-table1 th, .content-table1 td { 
+    padding: 12px 15px;
+    text-align: center;
+}
+
+#proyectos .content-table1 tbody tr { 
+    border-bottom: 1px solid #dddddd; 
+} 
+
+#proyectos .content-table1 tbody tr:nth-of-type(even) { 
+    background-color: #f3f3f3; 
+} 
+
+#proyectos .content-table1 tbody tr:last-of-type { 
+    border-bottom: 2px solid #003785; 
+}
+
+#habilidades{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#habilidades .p-icon{
+    width: 30px;
+    height: 30px;
+}
+#habilidades .habilidadesti{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f2f2f2;
+    width: 100%; 
+    padding: 3%;
+}
+
+#habilidades .subtitulohab{
+    flex-grow: 1;
+    
+}
+#habilidades .subtitulohabb{
+    flex-grow: 1;
+}
+#habilidades .habilidadestecnicas{
+    flex-grow: 1;
+}
+#habilidades .habilidadesBlandas{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1;
+}
+
+.footer-column-2{
+    display: inline-block;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+footer {
+    background-color: #003785; /* Color de fondo del footer */
+    color: #fff; /* Color de texto */
+    text-align: center;
+    padding: 20px 0; /* Espaciado interior arriba y abajo */
+}
