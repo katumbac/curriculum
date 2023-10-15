@@ -40,6 +40,7 @@ h1,h2,h3{
 
 nav {
     background-color: #003785;
+    width: 100%;
 }
 
 nav ul {
@@ -95,7 +96,7 @@ nav a:hover {
 }
 
 #informacion-personal .imgcv:hover {
-    border-color: #003785; /* Cambiar el color del borde al pasar el mouse */
+    border-color: #003785; 
 }
 
 #informacion-personal .detalles-contacto{
@@ -119,6 +120,10 @@ nav a:hover {
 #experiencia .p-icon{
     width: 30px;
     height: 30px;
+}
+
+#cursos{
+    width: 100%;
 }
 
 #cursos .p-icon{
@@ -155,7 +160,9 @@ nav a:hover {
 #cursos .content-table1 tbody tr:last-of-type { 
     border-bottom: 2px solid #003785; 
 }
-
+#proyectos{
+    width: 100%;
+}
 #proyectos .p-icon{
     width: 30px;
     height: 30px;
@@ -244,4 +251,5 @@ footer {
     color: #fff; /* Color de texto */
     text-align: center;
     padding: 20px 0; /* Espaciado interior arriba y abajo */
+    width: 100%;
 }
