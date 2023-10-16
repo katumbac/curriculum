@@ -48,8 +48,8 @@ nav {
     display: flex;
     list-style-type: none;
     width: 100%;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
+    justify-content: space-between;
+    font-size: 1rem;
 }
 
 nav i{
@@ -139,7 +139,7 @@ section>h2{
 #informacion-personal .detalles-contacto{
     text-align: justify;
     height: 100%;
-
+       
 }
 
 #formacion .iframe-wrapper{
@@ -413,11 +413,17 @@ footer {
         width: 100%;
         font-size: 11px;
     }
+    .menu a i{
+        font-size: 24px;
+        list-style-type: none;
+    }
     nav{
         width: 100%;
     }
     li{
         font-size: 8px;
+        list-style-type: none;
+        
     }
 
     table{
