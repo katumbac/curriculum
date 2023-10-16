@@ -196,7 +196,7 @@ table{
     border-collapse: collapse; 
     margin: 0 auto; 
     font-size: 1em;  
-    min-width: 450px; 
+    width: 100%; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
 }
 
@@ -353,7 +353,7 @@ footer {
     padding: 20px 0;
     width: 100%;
 }
-
+/*Para que se vea bien en pantalla de celulares*/
 @media screen and (max-width: 876px) {
     section {
         gap: 2rem;
@@ -379,6 +379,7 @@ footer {
     }
 
     table{
+        display: inline-block;
         font-size: 10px;
         width: 100%;
     }
@@ -386,13 +387,14 @@ footer {
     .content-table1{
         border-collapse: collapse; 
         margin: 0 auto; 
-        font-size: 0.8em;  
-        min-width: 100%; 
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+        font-size: 0.7em; 
+        text-align: center; 
+        width: 100%; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
     
     .content-table1 th, .content-table1 td { 
-        padding: 12px 15px;
+        padding: 10px 13px;
         text-align: center;
     }
 
