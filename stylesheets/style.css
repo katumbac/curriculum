@@ -20,7 +20,8 @@
     --color4 : #e8e4e6;
     --color5 : #f8f5f2;
     --color6 : #fffffe; 
-    --color7 : ##475d5b;
+    --color7 : #475d5b;
+    --color8 : #000000c0;
 }
 
 body{
@@ -55,18 +56,15 @@ nav {
     font-size: 1rem;
 }
 
-.menu a i{
+.menu a {
     font-size: 24px;
-    list-style-type: none;
-}
-nav i{
-    display: flex;
+    text-decoration:none;
     color: var(--color2);
 }
 
 nav i:hover {
     display: flex;
-    color: var(--color3); 
+    color: var(--color8); 
 }
 
 .titulo {
@@ -278,6 +276,7 @@ table{
 }
  /*---contacto---*/
 #contacto{
+    display: flex;
     flex-direction: row;
     row-gap: 1rem;
     column-gap: 0.5rem;
@@ -380,7 +379,7 @@ label{
 }
 
 #contacto .formulario>button:hover{
-    background-color: var(--color3);
+    background-color: var(--color8);
     color: var(--color2);
 }
 
