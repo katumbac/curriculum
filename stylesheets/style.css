@@ -394,3 +394,16 @@ footer {
     padding: 20px 0; /* Espaciado interior arriba y abajo */
     width: 100%;
 }
+
+@media screen and (max-width: 576px) {
+    section {
+        gap: 2rem;
+    }
+    h1{
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+    }
+}
