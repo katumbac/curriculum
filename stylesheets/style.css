@@ -83,7 +83,7 @@ section{
     flex-wrap: wrap;
     min-height: 50vh;
     align-items: center;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 }
 
 section>h2{
@@ -97,6 +97,8 @@ section>h2{
     place-items: center;
     gap: 2rem 0;
 }
+
+/* --- Información personal ---*/
 
 #informacion-personal{
     margin: 10px;
@@ -118,11 +120,17 @@ section>h2{
 }
 
 #informacion-personal .imagen-curriculum{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 50%;  
+    flex: 1 0 50%;
+    display: grid;
+    place-items: center;
 }
+
+.personal-img-wrapper>img{
+    width: 50%;
+    object-fit: cover;
+    mix-blend-mode:difference;
+}
+
 #informacion-personal .imgcv{
     border-radius: 50%;
     width: 200px;
@@ -140,6 +148,7 @@ section>h2{
        
 }
 
+/* --- Formación ---*/
 #formacion .iframe-wrapper{
     width: 50%;
     height: 40vh;
@@ -178,6 +187,8 @@ section>h2{
 #formacion .container-info p{   
     text-align: center;
 }
+
+/* --- Cursos y Proyectos ---*/
 
 table{
     overflow: auto;
@@ -223,6 +234,8 @@ table{
     border-bottom: 2px solid var(--blue); 
 }
 
+/* --- habilidades ---*/
+
 #habilidades{
     display: flex;
     flex-direction: row;
@@ -245,8 +258,7 @@ table{
 }
 
 #habilidades .subtitulohab,.subtitulohabb{
-    flex-grow: 1;
-    
+    flex-grow: 1;   
 }
 
 #habilidades .habilidadestecnicas,.habilidadesBlandas{
@@ -327,7 +339,8 @@ table{
 #contacto .formulario>input,
 #contacto .formulario>textarea{
     border: 1pt solid var(--lightblue);
-    background-color:white;   
+    background-color:white;
+    color: #003785;   
 }
 
 #contacto .formulario>button{
