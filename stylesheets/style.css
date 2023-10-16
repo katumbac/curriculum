@@ -64,7 +64,8 @@ nav {
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
-    font-size: 1.5rem;   
+    font-size: 1.5rem;
+    width: 100%;   
 }
 
 nav a{
@@ -76,6 +77,13 @@ nav a:hover {
     background-color: #2eb3c550 
 }
 
+section{
+    padding: 0 5%;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    align-items: center;
+    margin-bottom: 2rem;
+}
 #informacion-personal{
     margin: 10px;
     padding: 10px;
@@ -159,7 +167,7 @@ nav a:hover {
     text-align: center;
 }
 #cursos{
-    padding: 20px;
+    padding: 30px;
     width: 100%;
 }
 
@@ -286,7 +294,8 @@ nav a:hover {
     width: 100%;
     background-color: #003785;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+    top: 0; 
 }
 
 #contacto h2{
