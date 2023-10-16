@@ -183,6 +183,10 @@ section>h2{
 #formacion .container-info p{   
     text-align: center;
 }
+
+table{
+    overflow: auto;
+}
 #cursos{
     padding: 30px;
     width: 100%;
@@ -198,7 +202,6 @@ section>h2{
     font-size: 1em;  
     min-width: 450px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
-    overflow: auto;
 }
 
 #cursos .content-table1 thead tr { 
