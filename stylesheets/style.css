@@ -10,9 +10,15 @@ url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700& displ
     box-sizing: border-box;
 }
 
+:root{
+    --blue : #003785;
+    --white : #ffffff;
+    --lightblue: rgb(58, 156, 236);
+
+}
 h1 {
     font-size: 36px; 
-    color: #003785; 
+    color: var(--blue); 
     text-align: center; 
     margin: 20px 0; 
     font-weight: bold; 
@@ -20,23 +26,17 @@ h1 {
 }
 
 h2 {
-    color: #003785;
+    color:var(--blue);
     position: inline-block;
     font-family: 'Times New Roman', serif;
 }
 
 h3 {
-    color: #003785;
-}
-
-
-.linkedin-icon{
-    width: 15px;
-    height: 15px;
+    color: var(--blue);
 }
 
 header{
-    height: 75px;
+    height: 100px;
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -45,13 +45,13 @@ header{
     flex-wrap: wrap;
     position: sticky;
     top: 0;
-    background-color: #003785;
+    background-color:var(--blue);
     letter-spacing: .2rem;
     color: var(--lightblue);
     z-index: 1000;
 }
 
-header h1{
+h1{
     font-size: 25px;
     position: center;
     color: #ffffff;
@@ -63,13 +63,16 @@ nav {
 .menu{
     display: flex;
     list-style-type: none;
+    width: 100%;
     justify-content: space-evenly;
     font-size: 1.5rem;
-    width: 100%;   
 }
 
 nav a{
     text-decoration: none;
+    color: white
+}
+nav i{
     color: white
 }
 nav a:hover {
@@ -84,6 +87,12 @@ section{
     align-items: center;
     margin-bottom: 2rem;
 }
+
+section>h2{
+    width: 100%;
+    text-align: center;
+}
+
 #informacion-personal{
     margin: 10px;
     padding: 10px;
@@ -119,7 +128,7 @@ section{
 }
 
 #informacion-personal .imgcv:hover {
-    border-color: #003785; 
+    border-color: var(--blue); 
 }
 
 #informacion-personal .detalles-contacto{
@@ -184,7 +193,7 @@ section{
 }
 
 #cursos .content-table1 thead tr { 
-    background-color: #003785; 
+    background-color: var(--blue); 
     color: #ffffff; 
     text-align: middle; 
 }
@@ -203,7 +212,7 @@ section{
 } 
 
 #cursos .content-table1 tbody tr:last-of-type { 
-    border-bottom: 2px solid #003785; 
+    border-bottom: 2px solid var(--blue); 
 }
 
 #proyectos{
@@ -224,7 +233,7 @@ section{
 }
 
 #proyectos .content-table1 thead tr { 
-    background-color: #003785; 
+    background-color: var(--blue); 
     color: #ffffff; 
     text-align: middle; 
 }
@@ -243,7 +252,7 @@ section{
 } 
 
 #proyectos .content-table1 tbody tr:last-of-type { 
-    border-bottom: 2px solid #003785; 
+    border-bottom: 2px solid var(--blue); 
 }
 
 #habilidades{
@@ -292,7 +301,7 @@ section{
     column-gap: 0.5rem;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #003785;
+    background-color: var(--blue);
     justify-content: center; 
     align-items: center;
     top: 0; 
@@ -371,7 +380,7 @@ section{
 
 
 footer {
-    background-color: #003785; /* Color de fondo del footer */
+    background-color: var(--blue); /* Color de fondo del footer */
     color: #fff; /* Color de texto */
     text-align: center;
     padding: 20px 0; /* Espaciado interior arriba y abajo */
