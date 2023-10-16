@@ -23,23 +23,6 @@ body{
     background-color: var(--white);
     color: var(--black);
 }
-h1 {
-    font-weight: bold; 
-    font-family: Georgia, serif;
-    font-size: 25px;
-    position: center;
-    color: var(--white);
-}
-
-h2 {
-    color:var(--blue);
-    position: inline-block;
-    font-family: 'Times New Roman', serif;
-}
-
-h3 {
-    color: var(--blue);
-}
 
 header{
     height: 100px;
@@ -69,16 +52,30 @@ nav {
     font-size: 1.5rem;
 }
 
-nav a{
-    text-decoration: none;
-    color: white
-}
 nav i{
+    display: flex;
     color: white
 }
 nav i:hover {
-    display: block;
+    display: flex;
     color: var(--yellow); 
+}
+
+h1 {
+    font-weight: bold; 
+    font-family: Georgia, serif;
+    position: center;
+    color: var(--white);
+}
+
+h2 {
+    color:var(--blue);
+    position: inline-block;
+    font-family: 'Times New Roman', serif;
+}
+
+h3 {
+    color: var(--blue);
 }
 
 section{
@@ -140,8 +137,9 @@ section>h2{
 }
 
 #informacion-personal .detalles-contacto{
-    flex: 2; 
-    padding: 20px;   
+    text-align: justify;
+    height: 100%;
+
 }
 
 #formacion .iframe-wrapper{
