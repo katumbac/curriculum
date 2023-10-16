@@ -2,17 +2,18 @@
 url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700& display=swap');
 
 *{
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-    scroll-margin-top: 100px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
 }
 
 :root{
     --blue : #003785;
     --white : #ffffff;
+    --yellow : yellow;
     --lightblue: rgb(58, 156, 236);
 
 }
@@ -75,9 +76,9 @@ nav a{
 nav i{
     color: white
 }
-nav a:hover {
+nav i:hover {
     display: block;
-    background-color: #2eb3c550 
+    color: var(--yellow); 
 }
 
 section{
@@ -91,6 +92,13 @@ section{
 section>h2{
     width: 100%;
     text-align: center;
+}
+
+.section-info{
+    flex: 1 0 50%;
+    display: grid;
+    place-items: center;
+    gap: 2rem 0;
 }
 
 #informacion-personal{
@@ -375,7 +383,7 @@ section>h2{
 
 #contacto .formulario>button:hover{
     background-color: var(--white);
-    color: yellow;
+    color: var(--yellow);
 }
 
 
