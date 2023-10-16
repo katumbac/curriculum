@@ -391,7 +391,7 @@ footer {
     width: 100%;
 }
 /*Para que se vea bien en pantalla de celulares*/
-@media screen and (max-width: 876px) {
+@media screen and (max-width: 576px) {
     section {
         gap: 2rem;
     }
@@ -446,8 +446,16 @@ footer {
         text-align: center;
     }
 
+    #iconcont{
+        color:var(--color1);
+        font-size:20px;
+    }
+
+    #contacto .contact-icon p{
+        color: var(--color1);
+        font-size: 12px;
+    }
     .contact-form>input, 
-    .contact-form>textarea,
     .contact-form>label{
         width: 100%;
     }
