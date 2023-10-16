@@ -1,10 +1,13 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700& display=swap');
 
 *{
-    font-family: Arial, sans-serif;
-}
-body, h1, p {
-    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -26,49 +29,60 @@ h3 {
     color: #003785;
 }
 
-@import 
-url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700& display=swap');
-
-h1,h2,h3{ 
-    font-family:Roboto;
-}
 
 .linkedin-icon{
     width: 15px;
     height: 15px;
 }
 
-nav {
-    background-color: #003785;
+header{
+    height: 75px;
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background-color: #003785;
+    letter-spacing: .2rem;
+    color: var(--lightblue);
+    z-index: 1000;
 }
 
-nav ul {
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    text-align: center; 
+header h1{
+    font-size: 25px;
+    position: center;
+    color: #ffffff;
+}
+nav {
+    width: 50%;
 }
 
-nav li {
-    display: inline; 
-    margin: 0 20px; 
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-size: 1.5rem;   
 }
 
-nav a {
-    text-decoration: none; 
-    color: #fff; 
-    font-weight: bold;
+nav a{
+    text-decoration: none;
+    color: white
 }
-
 nav a:hover {
-    color: #ffde73 
+    display: block;
+    background-color: #2eb3c550 
 }
 
-#informacion-personal .p-icon{
-    width: 30px;
-    height: 30px;
+#informacion-personal{
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
 }
+
+
 
 #informacion-personal .informacion{
     display: flex;
@@ -80,6 +94,7 @@ nav a:hover {
     align-items: center;
     width: 100%;
     background-color: #f2f2f2;
+    padding: 20px;
 }
 
 #informacion-personal .imagen-curriculum{
@@ -104,25 +119,47 @@ nav a:hover {
     padding: 20px;   
 }
 
-#formación .p-icon{
-    width: 30px;
-    height: 30px;
+#formacion .iframe-wrapper{
+    width: 50%;
+    height: 40vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#formación .container-info {
+#formacion .iframe-wrapper>iframe{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+#formacion{
+    margin: 10px;
+    padding: 10px;
+}
+
+#formacion .info-formacion{
+    display: flex;
     width: 100%;
 }
 
-#formación .container-info h3{
-    color: #1465bb; 
-    text-align: middle;
-}
-#experiencia .p-icon{
-    width: 30px;
-    height: 30px;
+#formacion .container-info {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap: 3rem 0;
+    list-style-type: none;
 }
 
+#formacion .container-info h3{   
+    color: #1465bb; 
+    text-align: center;
+}
+
+#formacion .container-info p{   
+    text-align: center;
+}
 #cursos{
+    padding: 20px;
     width: 100%;
 }
 
@@ -160,7 +197,9 @@ nav a:hover {
 #cursos .content-table1 tbody tr:last-of-type { 
     border-bottom: 2px solid #003785; 
 }
+
 #proyectos{
+    padding: 20px;
     width: 100%;
 }
 #proyectos .p-icon{
@@ -207,12 +246,10 @@ nav a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
+    padding: 20px;
+    width: 100%;
 }
 
-#habilidades .p-icon{
-    width: 30px;
-    height: 30px;
-}
 #habilidades .habilidadesti{
     display: flex;
     justify-content: center; 
@@ -239,10 +276,88 @@ nav a:hover {
     flex-grow: 1;
 }
 
-.footer-column-2{
-    display: inline-block;
+
+#contacto{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #003785;
     justify-content: center; 
     align-items: center; 
+}
+
+#contacto h2{
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+#contacto .form-contact{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap: 3rem 0;
+    list-style-type: none;
+}
+
+#contacto .contact-icon p{
+    color: white;
+}
+#contacto .contact-icon>p{
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+    align-items: stretch;
+    padding: 10px;
+    text-decoration: none;   
+}
+
+#contacto .formulario{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+#contacto .formulario>input, 
+#contacto .formulario>textarea,
+#contacto .formulario>label{
+    width: 50%;
+    margin: .5rem 0;
+    border-radius: 5px;
+    padding: 3px;
+    resize: none;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    background-color: transparent;
+    color: var(--white);
+    
+}
+
+#contacto .formulario>input,
+#contacto .formulario>textarea{
+    border: 1pt solid var(--lightblue);
+    background-color:white;   
+}
+
+#contacto .formulario>button{
+    min-width: 15%;
+    line-height: 1.5rem;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--white);
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    border: 1pt solid white;
+}
+
+#contacto .formulario>button:hover{
+    background-color: var(--white);
+    color: yellow;
 }
 
 
