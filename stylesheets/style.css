@@ -14,16 +14,21 @@ url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700& displ
     --blue : #003785;
     --white : #ffffff;
     --yellow : yellow;
+    --black : rgb(20, 20, 20);
     --lightblue: rgb(58, 156, 236);
 
 }
+
+body{
+    background-color: var(--white);
+    color: var(--black);
+}
 h1 {
-    font-size: 36px; 
-    color: var(--blue); 
-    text-align: center; 
-    margin: 20px 0; 
     font-weight: bold; 
     font-family: Georgia, serif;
+    font-size: 25px;
+    position: center;
+    color: var(--white);
 }
 
 h2 {
@@ -52,11 +57,6 @@ header{
     z-index: 1000;
 }
 
-h1{
-    font-size: 25px;
-    position: center;
-    color: #ffffff;
-}
 nav {
     width: 50%;
 }
@@ -388,10 +388,10 @@ section>h2{
 
 
 footer {
-    background-color: var(--blue); /* Color de fondo del footer */
-    color: #fff; /* Color de texto */
+    background-color: var(--blue); 
+    color: #fff; 
     text-align: center;
-    padding: 20px 0; /* Espaciado interior arriba y abajo */
+    padding: 20px 0;
     width: 100%;
 }
 
@@ -404,6 +404,11 @@ footer {
         text-align: center;
     }
     nav{
+        width: 100%;
+    }
+    .contact-form>input, 
+    .contact-form>textarea,
+    .contact-form>label{
         width: 100%;
     }
 }
