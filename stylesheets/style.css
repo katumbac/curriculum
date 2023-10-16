@@ -233,7 +233,7 @@ table{
 } 
 
 .content-table1 tbody tr:nth-of-type(even) { 
-    background-color: #f3f3f3; 
+    background-color: var(--color2); 
 } 
 
 .content-table1 tbody tr:last-of-type { 
@@ -451,6 +451,9 @@ footer {
         font-size:20px;
     }
 
+    #contacto h2{
+        font-size: 14px;
+    }
     #contacto .contact-icon p{
         color: var(--color1);
         font-size: 12px;
