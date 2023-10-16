@@ -242,7 +242,6 @@ table{
     font-size: 1em;  
     min-width: 450px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
-    overflow: auto;
 }
 
 #proyectos .content-table1 thead tr { 
@@ -306,6 +305,10 @@ table{
     flex-grow: 1;
 }
 
+#contacto .divcontact{
+    display: flex;
+    padding: 20px;
+}
 
 #contacto{
     display: flex;
@@ -317,7 +320,6 @@ table{
     background-color: var(--blue);
     justify-content: center; 
     align-items: center;
-    top: 0; 
 }
 
 #contacto h2{
@@ -380,7 +382,7 @@ table{
     line-height: 1.5rem;
     border-radius: 5px;
     background-color: white;
-    color: var(--white);
+    color: var(--blue);
     cursor: pointer;
     letter-spacing: 0.1rem;
     border: 1pt solid white;
@@ -408,12 +410,83 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    h3{
+        width: 100%;
+        font-size: 11px;
+    }
     nav{
         width: 100%;
     }
+    li{
+        font-size: 8px;
+    }
 
     table{
+        font-size: 10px;
         width: 100%;
+    }
+
+    #cursos .content-table1{
+        border-collapse: collapse; 
+        margin: 0 auto; 
+        font-size: 0.8em;  
+        min-width: 100%; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+    }
+    
+    #cursos .content-table1 thead tr { 
+        background-color: var(--blue); 
+        color: #ffffff; 
+        text-align: middle; 
+    }
+    
+    #cursos .content-table1 th, .content-table1 td { 
+        padding: 12px 15px;
+        text-align: center;
+    }
+    
+    #cursos .content-table1 tbody tr { 
+        border-bottom: 5px solid #dddddd; 
+    } 
+    
+    #cursos .content-table1 tbody tr:nth-of-type(even) { 
+        background-color: #f3f3f3; 
+    } 
+    
+    #cursos .content-table1 tbody tr:last-of-type { 
+        border-bottom: 5px solid var(--blue); 
+    }
+
+    #proyectos .content-table1{
+        border-collapse: collapse; 
+        margin: 0 auto; 
+        font-size: 0.8em;  
+        min-width: 100%; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); 
+    }
+    
+    #proyectos .content-table1 thead tr { 
+        background-color: var(--blue); 
+        color: #ffffff; 
+        text-align: middle; 
+    }
+    
+    #proyectos .content-table1 th, .content-table1 td { 
+        padding: 12px 15px;
+        text-align: center;
+    }
+    
+    #proyectos .content-table1 tbody tr { 
+        border-bottom: 5px solid #dddddd; 
+    } 
+    
+    #proyectos .content-table1 tbody tr:nth-of-type(even) { 
+        background-color: #f3f3f3; 
+    } 
+    
+    #proyectos .content-table1 tbody tr:last-of-type { 
+        border-bottom: 5px solid var(--blue); 
     }
     .contact-form>input, 
     .contact-form>textarea,
