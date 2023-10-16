@@ -16,17 +16,16 @@
     --fondo  : #f2f7f5; /*fondo*/
     --color1 : #00473e; /*color primario*/
     --color2 : #ffffff;
-    --color3 : #f9bc60;
-    --color4 : #f8f5f2;
+    --color3 : #00473e;
+    --color4 : #e8e4e6;
     --color5 : #f8f5f2;
-    --color6 : #222525;
-    --color7 : #fffffe; 
-    --color8 : #232323;
+    --color6 : #fffffe; 
+    --color7 : ##475d5b;
 }
 
 body{
     background-color: var(--fondo);
-    color: var(--color8);
+    color: var(--color7);
 }
 
 header{
@@ -81,6 +80,7 @@ nav i:hover {
     color:var(--color1);
     position: inline-block;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
 
 section{
@@ -119,7 +119,7 @@ section>h2{
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: var(--color7);
+    background-color: var(--color6);
     padding: 20px;
 }
 
@@ -184,7 +184,7 @@ section>h2{
 }
 
 #formacion .container-info h3{   
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--color3); 
     text-align: center;
     font-weight: bold;
@@ -192,8 +192,8 @@ section>h2{
 
 #formacion .container-info p{   
     text-align: center;
-    font-size: 1em;
-    color: var(--color8);
+    font-size: .9em;
+    color: var(--color7);
 }
 
 /* --- Cursos y Proyectos ---*/
@@ -260,7 +260,7 @@ table{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    background-color: var(--color7);
+    background-color: var(--color6);
     width: 100%; 
     padding: 3%;
 }
@@ -283,7 +283,7 @@ table{
     column-gap: 0.5rem;
     flex-wrap: wrap;
     width: 100%;
-    background-color: var(--color8);
+    background-color: var(--color4);
     justify-content: center; 
     align-items: center;
 }
@@ -295,7 +295,7 @@ table{
 }
 
 #contacto h2{
-    color: var(--color3);
+    color: var(--color1);
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -308,7 +308,7 @@ label{
 }
 
 #iconcont{
-    color:var(--color3);
+    color:var(--color1);
     font-size:24px;
 }
 #contacto .contact-icon{ 
@@ -329,7 +329,7 @@ label{
 }
 
 #contacto .contact-icon p{
-    color: var(--color3);
+    color: var(--color1);
 }
 #contacto .contact-icon>p{
     display: flex;
@@ -358,7 +358,7 @@ label{
     line-height: 1.5rem;
     letter-spacing: 0.1rem;
     background-color: transparent;
-    color: var(--color3);
+    color: var(--color1);
     
 }
 
@@ -369,19 +369,19 @@ label{
 }
 
 #contacto .formulario>button{
-    min-width: 15%;
+    min-width: 20%;
     line-height: 1.5rem;
     border-radius: 5px;
-    background-color: var(--color3);
-    color: var(--color5);
+    background-color: var(--color1);
+    color: var(--color2);
     cursor: pointer;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.rem;
     border: 1pt solid ;
 }
 
 #contacto .formulario>button:hover{
-    background-color: var(--color2);
-    color: var(--color1);
+    background-color: var(--color3);
+    color: var(--color2);
 }
 
 footer {
