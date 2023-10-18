@@ -14,10 +14,10 @@
 
 :root{
     --fondo  : #f2f7f5; /*fondo*/
-    --color1 : #00473e; /*color primario*/
+    --color1 : #003785; /*color primario*/
     --color2 : #ffffff;
-    --color3 : #00473e;
-    --color4 : #e8e4e6;
+    --color3 : #070047;
+    --color4 : #ebe8ea;
     --color5 : #f8f5f2;
     --color6 : #fffffe; 
     --color7 : #475d5b;
@@ -138,6 +138,7 @@ section>h2{
     width: 225px;
     height: 225px;
     border: 2px solid var(--color1);
+    box-shadow: 0 0 2.5px var(--color1);
 }
 
 #informacion-personal .imgcv:hover {
@@ -395,6 +396,7 @@ footer {
     section {
         gap: 2rem;
     }
+    
     h1{
         width: 100%;
         text-align: center;
