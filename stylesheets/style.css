@@ -304,7 +304,7 @@ label{
     font-family: 'Montserrat', sans-serif;
 }
 
-#iconcont{
+#iconcont1, #iconcont2 , #iconcont3{
     color:var(--color1);
     font-size:24px;
 }
@@ -444,7 +444,7 @@ footer {
         text-align: center;
     }
 
-    #iconcont{
+    #iconcont1, #iconcont2 , #iconcont3{
         color:var(--color1);
         font-size:20px;
     }
