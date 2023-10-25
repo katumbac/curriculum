@@ -70,13 +70,11 @@ nav i:hover {
 .titulo {
     font-weight: bold; 
     font-family: 'Montserrat', sans-serif;
-    position: center;
     color: var(--color2);
 }
 
 .subtitulo{
     color:var(--color1);
-    position: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
@@ -221,7 +219,6 @@ table{
 .content-table1 thead tr { 
     background-color: var(--color1); 
     color: var(--color2); 
-    text-align: middle; 
 }
 
 .content-table1 th, .content-table1 td { 
@@ -375,8 +372,7 @@ label{
     background-color: var(--color1);
     color: var(--color2);
     cursor: pointer;
-    letter-spacing: 0.rem;
-    border: 1pt solid ;
+    border: 1pt solid;
 }
 
 #contacto .formulario>button:hover{
