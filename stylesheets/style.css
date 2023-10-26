@@ -48,6 +48,7 @@ nav {
     width: 50%;
 }
 
+
 .menu{
     display: flex;
     list-style-type: none;
@@ -71,6 +72,17 @@ nav i:hover {
     font-weight: bold; 
     font-family: 'Montserrat', sans-serif;
     color: var(--color2);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10;
 }
 
 .subtitulo{
@@ -101,30 +113,22 @@ section>h2{
 /* --- Información personal ---*/
 
 #informacion-personal{
+    flex-basis: 90%;
+    flex-grow: 1;
     margin: 10px;
     padding: 10px;
     text-align: justify;
 }
 
 #informacion-personal .informacion{
-    display: flex;
-    flex-direction: row;
-    row-gap: 1rem;
-    column-gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     background-color: var(--color6);
     padding: 20px;
 }
 
-#informacion-personal .imagen-curriculum{
-    flex: 1 0 50%;
-    display: grid;
-    place-items: center;
+#informacion-personal .imagen-curriculum, .detalles-contacto{
+    flex-basis: 49%;
+    flex-grow: 1;    
 }
-
 .personal-img-wrapper>img{
     width: 50%;
     object-fit: cover;
@@ -143,41 +147,27 @@ section>h2{
     border-color: var(--color1); 
 }
 
-#informacion-personal .detalles-contacto{
-    text-align: justify;
-    height: 100%;
-       
-}
+
 
 /* --- Formación ---*/
-#formacion .iframe-wrapper{
-    width: 50%;
-    height: 40vh;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#formacion .iframe-wrapper>iframe{
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-}
-
 #formacion{
+    flex-basis: 90%;
+    flex-grow: 1;
     margin: 10px;
     padding: 10px;
 }
 
 #formacion .info-formacion{
-    display: flex;
-    width: 100%;
+    flex-basis: 90%;
+    flex-grow: 1;
 }
-
 #formacion .container-info {
-    display: flex;
-    flex-direction: column;
+    flex-basis: 49%;
+    flex-grow: 1;
     width:50%;
     gap: 3rem 0;
     list-style-type: none;
+    margin: 20px;
 }
 
 #formacion .container-info h3{   
@@ -193,6 +183,21 @@ section>h2{
     color: var(--color7);
 }
 
+#formacion .iframe-wrapper{
+    flex-basis: 49%;
+    flex-grow: 1;
+    height: 40vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#formacion .iframe-wrapper>iframe{
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+
+
 /* --- Cursos y Proyectos ---*/
 
 table{
@@ -200,14 +205,12 @@ table{
 }
 
 #cursos, #proyectos{
+    flex-basis: 90%;
+    flex-grow: 1;
     padding: 30px;
     width: 100%;
 }
 
-.p-icon{
-    width: 30px;
-    height: 30px;
-}
 .content-table1{
     border-collapse: collapse; 
     margin: 0 auto; 
@@ -240,113 +243,101 @@ table{
 
 /* --- habilidades ---*/
 
-#habilidades{
+#habilidades {
     display: flex;
-    flex-direction: row;
-    row-gap: 1rem;
-    column-gap: 0.5rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 20px;
+    flex-direction: row; 
+    justify-content: center;
+    text-align: center;
+    margin: 3px;
     width: 100%;
 }
 
-#habilidades .habilidadesti{
+#habilidades .habilidadesti {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background-color: var(--color6);
-    width: 100%; 
-    padding: 3%;
+    background-color: var(--color6); 
+    padding: 20px;
+    margin-top: 20px;
 }
 
-#habilidades .subtitulohab,.subtitulohabb{
-    flex-grow: 1;   
-    color: var(--color3);
-}
-
-#habilidades .habilidadestecnicas,.habilidadesBlandas{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+#habilidades .habilidadestecnicas, .habilidadesBlandas,ul {
+    flex-basis: 49%; 
     flex-grow: 1;
+    list-style-type: none;
+    justify-content: center; 
+    align-items: center;
+
 }
+
+#habilidades .subtitulohab, .subtitulohabb {
+    color: var(--color3);
+    margin-bottom: 10px;
+}
+
  /*---contacto---*/
-#contacto{
+ #contacto {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Cambia la dirección a una columna para apilar elementos verticalmente */
     row-gap: 1rem;
     column-gap: 0.5rem;
-    flex-wrap: wrap;
     width: 100%;
     background-color: var(--color4);
-    justify-content: center; 
     align-items: center;
 }
 
-#contacto .divcontact{
-    display: flex;
+#contacto .divcontact {
+    display: flex; /* Añade flex a este contenedor para alinear elementos horizontalmente */
+    flex-wrap: wrap; /* Asegura que los elementos se envuelvan si no caben en una sola fila */
+    justify-content: space-between; /* Distribuye los elementos a los extremos (izquierda y derecha) */
     padding: 10px;
     width: 100%;
 }
 
-#contacto h2{
+#contacto h2 {
     color: var(--color1);
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
-label{
+label {
     font-weight: bold;
     color: var(--color3);
     font-family: 'Montserrat', sans-serif;
 }
 
-#iconcont1, #iconcont2 , #iconcont3{
-    color:var(--color1);
-    font-size:24px;
+#iconcont1, #iconcont2, #iconcont3 {
+    color: var(--color1);
+    font-size: 24px;
 }
-#contacto .contact-icon{ 
-    display: flex;
-    flex-direction: column;
-    width:50%;
+
+#contacto .contact-icon , .form-contact{
+    flex-basis: 49%;
+    flex-grow: 1;
+    width: 50%;
     list-style-type: none;
 }
 
-#contacto .form-contact{
-    justify-content: center; 
-    align-items: center; 
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    gap: 3rem 0;
-    list-style-type: none;
-}
-
-#contacto .contact-icon p{
+#contacto .contact-icon p {
     color: var(--color1);
 }
-#contacto .contact-icon>p{
-    display: flex;
+
+#contacto .contact-icon > p {
     flex-direction: row;
     row-gap: 1rem;
     column-gap: 0.5rem;
     align-items: stretch;
     padding: 10px;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
-#contacto .formulario{
-    display: flex;
-    flex-direction: column;
+#contacto .formulario {
     width: 100%;
     align-items: center;
+    display: flex; /* Añade flex para alinear elementos horizontalmente */
+    flex-direction: column; /* Cambia la dirección a una columna para apilar elementos verticalmente */
 }
 
-#contacto .formulario>input, 
-#contacto .formulario>label{
+#contacto .formulario > input, #contacto .formulario > label {
     width: 50%;
     margin: .5rem 0;
     border-radius: 5px;
@@ -356,16 +347,15 @@ label{
     letter-spacing: 0.1rem;
     background-color: transparent;
     color: var(--color1);
-    
 }
 
-#contacto .formulario>input{
+#contacto .formulario > input {
     border: 1pt solid var(--color1);
-    background-color:var(--color2);
-    color: var(--color1);   
+    background-color: var(--color2);
+    color: var(--color1);
 }
 
-#contacto .formulario>button{
+#contacto .formulario > button {
     min-width: 20%;
     line-height: 1.5rem;
     border-radius: 5px;
@@ -375,10 +365,11 @@ label{
     border: 1pt solid;
 }
 
-#contacto .formulario>button:hover{
+#contacto .formulario > button:hover {
     background-color: var(--color8);
     color: var(--color2);
 }
+
 
 footer {
     background-color: var(--color1); 
@@ -387,7 +378,7 @@ footer {
     padding: 20px 0;
     width: 100%;
 }
-/*Para que se vea bien en pantalla de celulares*/
+
 @media screen and (max-width: 576px) {
     section {
         gap: 2rem;
