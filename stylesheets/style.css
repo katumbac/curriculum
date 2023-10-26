@@ -276,7 +276,7 @@ table{
  /*---contacto---*/
  #contacto {
     display: flex;
-    flex-direction: column; /* Cambia la dirección a una columna para apilar elementos verticalmente */
+    flex-direction: column; 
     row-gap: 1rem;
     column-gap: 0.5rem;
     width: 100%;
@@ -285,9 +285,9 @@ table{
 }
 
 #contacto .divcontact {
-    display: flex; /* Añade flex a este contenedor para alinear elementos horizontalmente */
-    flex-wrap: wrap; /* Asegura que los elementos se envuelvan si no caben en una sola fila */
-    justify-content: space-between; /* Distribuye los elementos a los extremos (izquierda y derecha) */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
     padding: 10px;
     width: 100%;
 }
@@ -333,8 +333,8 @@ label {
 #contacto .formulario {
     width: 100%;
     align-items: center;
-    display: flex; /* Añade flex para alinear elementos horizontalmente */
-    flex-direction: column; /* Cambia la dirección a una columna para apilar elementos verticalmente */
+    display: flex; 
+    flex-direction: column; 
 }
 
 #contacto .formulario > input, #contacto .formulario > label {
